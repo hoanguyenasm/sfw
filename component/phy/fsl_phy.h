@@ -29,7 +29,8 @@
 #define PHY_BCTL_LOOP_MASK            0x4000U /*!< The PHY loop bit mask. */
 #define PHY_BCTL_RESET_MASK           0x8000U /*!< The PHY reset bit mask. */
 #define PHY_BCTL_SPEED_100M_MASK      0x2000U /*!< The PHY 100M speed mask. */
-#define PHY_BCTL_SPEED1_MASK          0x40U   /*!< The PHY speed 1 mask.*/
+#define PHY_BCTL_SPEED1_MASK          0x0040U /*!< The PHY speed 1 mask.*/
+#define PHY_BCTL_ISOLATE_MASK         0x0400U /*!< The PHY isolate mask.*/
 
 /*! @brief Defines the mask flag in basic status register. */
 #define PHY_BSTATUS_LINKSTATUS_MASK  0x0004U /*!< The PHY link status mask. */
@@ -43,6 +44,7 @@
 #define PHY_100BASETX_HALFDUPLEX_MASK 0x080U /*!< The PHY has the 100M full duplex ability.*/
 #define PHY_10BASETX_FULLDUPLEX_MASK  0x040U /*!< The PHY has the 10M full duplex ability.*/
 #define PHY_10BASETX_HALFDUPLEX_MASK  0x020U /*!< The PHY has the 10M full duplex ability.*/
+#define PHY_IEEE802_3_SELECTOR_MASK   0x001U /*!< The message type being sent by Auto-Nego.*/
 
 /*! @brief Defines the mask flag in the 1000BASE-T control register. */
 #define PHY_1000BASET_FULLDUPLEX_MASK 0x200U /*!< The PHY has the 1000M full duplex ability.*/

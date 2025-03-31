@@ -60,7 +60,8 @@
 #include "lwip/netifapi.h"
 
 #ifdef SOC_IMXRT1170_SERIES
-#include "fsl_phyrtl8211f.h"
+//#include "fsl_phyrtl8211f.h"
+#include "fsl_phyar8031ds.h"
 #else
 #include "fsl_phyksz8081.h"
 #endif
@@ -79,7 +80,8 @@
 #define EXAMPLE_PHY_ADDRESS BOARD_ENET1_PHY_ADDRESS
 
 /* PHY operations. */
-#define EXAMPLE_PHY_OPS phyrtl8211f_ops
+//#define EXAMPLE_PHY_OPS phyrtl8211f_ops
+#define EXAMPLE_PHY_OPS phyar8031ds_ops
 
 /* ENET clock frequency. */
 #define EXAMPLE_CLOCK_FREQ CLOCK_GetRootClockFreq(kCLOCK_Root_Bus)

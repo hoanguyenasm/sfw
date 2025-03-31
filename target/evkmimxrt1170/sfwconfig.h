@@ -21,14 +21,6 @@
 
 #define SFW_RTOS_FREERTOS
 #define OTA_SUPPORT
-#define OTA_CLOUD
-#define OTA_ALIYUN
-
-/* Aliyun Config */
-
-#define PRODUCT_KEY ""
-#define DEVICE_NAME ""
-#define DEVICE_SECRET ""
 #define OTA_SDCARD
 #define COMPONENT_SDMMC
 #define OTA_UDISK

@@ -8,8 +8,10 @@ cwd = GetCurrentDir()
 CPPPATH = [cwd, cwd + "/mdio/enet"]
 
 if GetDepend(['SOC_IMXRT1170_SERIES']):
-    src += ['device/phyrtl8211f/fsl_phyrtl8211f.c']
-    CPPPATH += [cwd + "/device/phyrtl8211f"]
+#    src += ['device/phyrtl8211f/fsl_phyrtl8211f.c']
+#    CPPPATH += [cwd + "/device/phyrtl8211f"]
+    src += ['device/phyar8031ds/fsl_phyar8031ds.c']
+    CPPPATH += [cwd + "/device/phyar8031ds"]
 else:
     src += ['device/phyksz8081/fsl_phyksz8081.c']
     CPPPATH += [cwd + "/device/phyksz8081"]

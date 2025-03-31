@@ -105,7 +105,8 @@
 #define BOARD_ENET0_PHY_ADDRESS (0x02U) /* Phy address of enet port 0. */
 
 /*! @brief The ENET1 PHY address. */
-#define BOARD_ENET1_PHY_ADDRESS (0x01U) /* Phy address of enet port 1. */
+//#define BOARD_ENET1_PHY_ADDRESS (0x01U) /* Phy address of enet port 1. */
+#define BOARD_ENET1_PHY_ADDRESS (0x00U) /* Phy address of enet port 1. */
 
 /* @brief The EMVSIM SMARTCARD PHY configuration. */
 #define BOARD_SMARTCARD_MODULE                (EMVSIM1)      /*!< SMARTCARD communicational module instance */
